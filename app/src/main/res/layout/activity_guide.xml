@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#918989"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/ll_guide_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+        <ImageView
+            android:id="@+id/iv_dot_red"
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:src="@drawable/dot_red"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_guide_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="开始体验"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:background="@drawable/selector_button_guide"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/rl_guide"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
